@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Melhores Ofertas do Dia Shopee — Curadoria inteligente de produtos com os melhores preços">
-  <title>🛒 Melhores Ofertas do Dia — Shopee</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Melhores Ofertas do Dia Shopee">
+<title>Melhores Ofertas do Dia - Shopee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
     :root {
       --primary:#EE4D2D;--primary-2:#FF6B35;--dark:#0D0D0D;--dark-2:#1A1A1A;
       --dark-3:#242424;--surface:#1E1E1E;--border:rgba(255,255,255,0.07);
@@ -78,101 +78,54 @@
     @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
     @media(max-width:768px){.hero{padding:40px 16px 32px}.grid-wrap{padding:24px 16px 40px}.grid{grid-template-columns:repeat(2,1fr);gap:12px}.card-img-wrap{height:160px}.card-body{padding:12px}.card-preco{font-size:1.1em}.trust-inner{gap:16px}.trust-item:last-child{display:none}}
     @media(max-width:480px){.hero h1{font-size:1.7em}}
-  </style>
+</style>
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">
-      <div class="logo-icon">🛒</div>
-      <div class="logo-text">Melhores<span>Ofertas</span></div>
-    </a>
-    <div class="header-badge">
-      <div class="badge-dot"></div>
-      <span>Atualizado hoje</span>
-    </div>
-  </div>
-</header>
-<div class="trust-bar">
-  <div class="trust-inner">
-    <div class="trust-item"><span>🔒</span><span>Compra 100% segura na Shopee</span></div>
-    <div class="trust-item"><span>✅</span><span>Produtos verificados</span></div>
-    <div class="trust-item"><span>🤖</span><span>Curadoria por Inteligência Artificial</span></div>
-    <div class="trust-item"><span>🚚</span><span>Frete grátis disponível</span></div>
-  </div>
-</div>
-<div class="hero">
-  <div class="hero-tag">✦ Curadoria inteligente diária</div>
-  <h1>Melhores Ofertas<br>do Dia <span class="highlight">Shopee</span></h1>
-  <p>Produtos selecionados por IA com os melhores preços. Atualizado todos os dias para você economizar.</p>
-  <div class="hero-stats">
-    <div class="stat"><div class="stat-value" id="count-produtos">--</div><div class="stat-label">Ofertas hoje</div></div>
-    <div class="stat-divider"></div>
-    <div class="stat"><div class="stat-value">4.7★</div><div class="stat-label">Avaliação média</div></div>
-    <div class="stat-divider"></div>
-    <div class="stat"><div class="stat-value">IA</div><div class="stat-label">Seleção inteligente</div></div>
-  </div>
-</div>
-<div class="filters-wrap">
-  <div class="filters-inner">
-    <div class="filters-label">Categorias</div>
-    <div class="filters" id="filters">
-      <button class="filtro ativo" onclick="filtrar('todos',this)">Todos</button>
-      <button class="filtro" onclick="filtrar('perfume-importado', this)">perfume importado</button>
-<button class="filtro" onclick="filtrar('cadeira-gamer', this)">cadeira gamer</button>
-<button class="filtro" onclick="filtrar('aspirador-robo', this)">aspirador robo</button>
-<button class="filtro" onclick="filtrar('caixa-de-som-bluetooth', this)">caixa de som bluetooth</button>
-<button class="filtro" onclick="filtrar('escova-secador-cabelo', this)">escova secador cabelo</button>
-<button class="filtro" onclick="filtrar('air-fryer', this)">air fryer</button>
-<button class="filtro" onclick="filtrar('panela-pressao-eletrica', this)">panela pressao eletrica</button>
-<button class="filtro" onclick="filtrar('monitor', this)">monitor</button>
-<button class="filtro" onclick="filtrar('camera-de-seguranca', this)">camera de seguranca</button>
-<button class="filtro" onclick="filtrar('headset-gamer', this)">headset gamer</button>
-<button class="filtro" onclick="filtrar('smartwatch', this)">smartwatch</button>
-<button class="filtro" onclick="filtrar('relogio-masculino', this)">relogio masculino</button>
-    </div>
-  </div>
-</div>
-<div class="grid-wrap">
-  <div class="grid-header">
-    <div class="grid-title">Ofertas em destaque</div>
-    <div class="grid-count" id="grid-count"></div>
-  </div>
-  <div class="grid" id="grid"></div>
-</div>
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Melhores<span>Ofertas</span></div>
-    <p class="footer-text">As ofertas são atualizadas diariamente por inteligência artificial.<br>Os preços e disponibilidade podem variar. Links de parceiro Shopee.</p>
-  </div>
-</footer>
+<header><div class="header-inner"><a href="/" class="logo"><div class="logo-icon">🛒</div><div class="logo-text">Melhores<span>Ofertas</span></div></a><div class="header-badge"><div class="badge-dot"></div><span>Atualizado hoje</span></div></div></header>
+<div class="trust-bar"><div class="trust-inner"><div class="trust-item"><span>🔒</span><span>Compra 100% segura na Shopee</span></div><div class="trust-item"><span>✅</span><span>Produtos verificados</span></div><div class="trust-item"><span>🤖</span><span>Curadoria por Inteligência Artificial</span></div><div class="trust-item"><span>🚚</span><span>Frete grátis disponível</span></div></div></div>
+<div class="hero"><div class="hero-tag">✦ Curadoria inteligente diária</div><h1>Melhores Ofertas<br>do Dia <span class="highlight">Shopee</span></h1><p>Produtos selecionados por IA com os melhores preços. Atualizado todos os dias para você economizar.</p><div class="hero-stats"><div class="stat"><div class="stat-value" id="count-produtos">--</div><div class="stat-label">Ofertas hoje</div></div><div class="stat-divider"></div><div class="stat"><div class="stat-value">4.7★</div><div class="stat-label">Avaliação média</div></div><div class="stat-divider"></div><div class="stat"><div class="stat-value">IA</div><div class="stat-label">Seleção inteligente</div></div></div></div>
+<div class="filters-wrap"><div class="filters-inner"><div class="filters-label">Categorias</div><div class="filters" id="filters"><button class="filtro ativo" onclick="filtrar('todos',this)">Todos</button><button class="filtro" onclick="filtrar('perfume-importado',this)">perfume importado</button>
+<button class="filtro" onclick="filtrar('cadeira-gamer',this)">cadeira gamer</button>
+<button class="filtro" onclick="filtrar('aspirador-robo',this)">aspirador robo</button>
+<button class="filtro" onclick="filtrar('caixa-de-som-bluetooth',this)">caixa de som bluetooth</button>
+<button class="filtro" onclick="filtrar('escova-secador-cabelo',this)">escova secador cabelo</button>
+<button class="filtro" onclick="filtrar('air-fryer',this)">air fryer</button>
+<button class="filtro" onclick="filtrar('panela-pressao-eletrica',this)">panela pressao eletrica</button>
+<button class="filtro" onclick="filtrar('monitor',this)">monitor</button>
+<button class="filtro" onclick="filtrar('camera-de-seguranca',this)">camera de seguranca</button>
+<button class="filtro" onclick="filtrar('headset-gamer',this)">headset gamer</button>
+<button class="filtro" onclick="filtrar('smartwatch',this)">smartwatch</button>
+<button class="filtro" onclick="filtrar('relogio-masculino',this)">relogio masculino</button></div></div></div>
+<div class="grid-wrap"><div class="grid-header"><div class="grid-title">Ofertas em destaque</div><div class="grid-count" id="grid-count"></div></div><div class="grid" id="grid"></div></div>
+<footer><div class="footer-inner"><div class="footer-logo">Melhores<span>Ofertas</span></div><p class="footer-text">As ofertas são atualizadas diariamente por inteligência artificial.<br>Os preços e disponibilidade podem variar. Links de parceiro Shopee.</p></div></footer>
+<script type="application/json" id="dados">[{"produto_uuid":"132b5cf9-e6a3-4fc3-bf35-bd3e94b68caa","nome":"Perfume Árabe Armaf Odyssey Mandarin Sky  Perfume Masculino Edp 100ml Original Importado","preco_atual":159,"imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mnzi7za0rlzc0d","url_afiliado_temp":"https://s.shopee.com.br/4AxCMsvx3T","keyword_busca":"perfume importado"},{"produto_uuid":"54f0dcf4-2690-44e2-adfa-4bd9fc99843c","nome":"Cadeira Gamer Reclinável Escritório Home Office Ergonômica Confortável Couro Sintético 120kg","preco_atual":398.7,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-820m3-mo5q13uis5c171","url_afiliado_temp":"https://s.shopee.com.br/qgkOie24j","keyword_busca":"cadeira gamer"},{"produto_uuid":"c8f8c74e-fc4f-41de-9c09-6237f8a60a1d","nome":"Aspirador de Pó Robô WAP Robot W100 3 em 1 Antiqueda Bivolt 17W","preco_atual":399.99,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-mi3iwgro7wg2ad","url_afiliado_temp":"https://s.shopee.com.br/17dNeTkI1","keyword_busca":"aspirador robo"},{"produto_uuid":"bdf7dfd1-98e4-4056-a29a-4d011087d19e","nome":"Aspirador de Pó Robô 3 em 1 com MOP PAS23 Antiqueda - Philco","preco_atual":445.9,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rep9-m8oxc86cbg6h06","url_afiliado_temp":"https://s.shopee.com.br/7VDeL00e6l","keyword_busca":"aspirador robo"},{"produto_uuid":"c0b02c4d-1a4d-4690-82fb-b1c226d9e263","nome":"Caixa De Som Bluetooth Portátil RGB Potente TWS USB Estéreo 30/50W Para Praia, Festa ou Viagem-Xtrad","preco_atual":99.96,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-lr7ob4xz5fd95d","url_afiliado_temp":"https://s.shopee.com.br/8fPbj7tRjI","keyword_busca":"caixa de som bluetooth"},{"produto_uuid":"6c9f2cd4-927e-4ad5-b82d-8bab7c4e17a9","nome":"Cadeira Gamer Ergonômica Reclinável Giratória Ajuste Altura Escritório DG-02 Apoio Pés","preco_atual":449.95,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-menebw4j3v9d71","url_afiliado_temp":"https://s.shopee.com.br/BR3bUgZQX","keyword_busca":"cadeira gamer"},{"produto_uuid":"e5397f8e-7573-4160-9e39-4db3bad684b0","nome":"GOKOCO Secador De Cabelo Com 5 Em 1 GD023 Escova Magnético Multifuncional De Alta Velocidade Com Alisar Enrolar Hot Air","preco_atual":459,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-ly4xw9u0pmnr61","url_afiliado_temp":"https://s.shopee.com.br/3LO5NJvX5X","keyword_busca":"escova secador cabelo"},{"produto_uuid":"3b35e63f-10a7-427d-8242-92ee091834b1","nome":"Kit 10 Potes Vidro 370ml Hermético Marmita Forno microondas Airfryer Manubelita","preco_atual":87.97,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-81zuj-ml576pt4f9513a","url_afiliado_temp":"https://s.shopee.com.br/902S7kiM5J","keyword_busca":"air fryer"},{"produto_uuid":"e991c563-0d59-45ae-a722-1afe5013e7a3","nome":"Panela De Pressão Elétrica 6L Inox Preta Digital 110V ou 220V Oliver Home","preco_atual":389.9,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-mfbgj9fz2xac37","url_afiliado_temp":"https://s.shopee.com.br/2BC7zDgXnq","keyword_busca":"panela pressao eletrica"},{"produto_uuid":"92fa6fd6-582b-4442-a999-2c3040b2727b","nome":"Suporte Articula Para TVS E Monitor De 14 A 55 Polegadas, LED, PLASMA, LCD","preco_atual":36.9,"imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mm1aumto7pc359","url_afiliado_temp":"https://s.shopee.com.br/20shmtr066","keyword_busca":"monitor"},{"produto_uuid":"6ac0b38c-192d-4af5-bb3d-974136f27c76","nome":"JL PROTEC 4K 8MP Câmera de Segurança 2 Lentes Com Audio e Microfone Câmera 355 Graus Wifi","preco_atual":176.99,"imagem_url":"https://cf.shopee.com.br/file/br-11134201-81ztc-mj6htjflukg333","url_afiliado_temp":"https://s.shopee.com.br/7VDeL0F5As","keyword_busca":"camera de seguranca"},{"produto_uuid":"17244bd0-e409-4f8b-a895-a37535498618","nome":"Escova Secadora 110V Alisador Elétrica Quente Cabelo Com 3 Em1 Hair Styler","preco_atual":37.99,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7ravk-ma1kw2axdoy9bb","url_afiliado_temp":"https://s.shopee.com.br/5VSZxInHgk","keyword_busca":"escova secador cabelo"},{"produto_uuid":"6758dce4-b971-4d49-adcc-2b17c22a4c39","nome":"Câmera De Rede Sem Fio À Prova D'água 1080P Wi-Fi De Visão Noturna Infravermelha Amplamente Utilizada Para 360 Seguro ° ","preco_atual":50.99,"imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mi1duijnjapwd4","url_afiliado_temp":"https://s.shopee.com.br/7AanwOGLqi","keyword_busca":"camera de seguranca"},{"produto_uuid":"8c89c562-19ee-4b31-82c6-94310119bf98","nome":"RUI 360 Graus 1080P FHD Câmera WiFi CCTV De Segurança IP-IP66 À Prova D'água IR Visão Noturna Flash Light","preco_atual":58.99,"imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mlvphyh4czr578","url_afiliado_temp":"https://s.shopee.com.br/6L1gwrJWXV","keyword_busca":"camera de seguranca"},{"produto_uuid":"824a9b17-7482-4e88-9a68-d615766d2ac4","nome":"Headset Fone Gamer Led RGB com microfone USB e P2 Para PC Computador Headphone Videogame","preco_atual":49.95,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-820lx-mok07e710e1270","url_afiliado_temp":"https://s.shopee.com.br/30lEx9f0Co","keyword_busca":"headset gamer"},{"produto_uuid":"31a5388b-5a16-436e-821b-972cef5f3cc7","nome":"Smartwatch T800 Series 9 Ultra Calculadora Cardíaca Monitoramento Da Frequência Relógio Inteligente","preco_atual":41.86,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rbna-lqr2pckaryk81a","url_afiliado_temp":"https://s.shopee.com.br/5fm09P4Tsp","keyword_busca":"smartwatch"},{"produto_uuid":"b5c93aa2-bd59-4e66-8f43-00e1bf57e814","nome":"PANO MOP COMPATIVEL XIAOMI ROBO ASPIRADOR  S40/S40C/H40 MICROFIBRA PREMIUM","preco_atual":29.9,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-820lt-mlzk5i224cuc61","url_afiliado_temp":"https://s.shopee.com.br/7pqUjbzNQn","keyword_busca":"aspirador robo"},{"produto_uuid":"2e0253a5-9cd0-4263-baf6-9191e2bc61ae","nome":"10 Bandejas MDF 20x15x7 Te amo Casal Namorados Feminino Masculino Presente Chocolate Relogio Perfume","preco_atual":39.9,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-81zun-mko3oxhbfnk386","url_afiliado_temp":"https://s.shopee.com.br/1gFrOIwssu","keyword_busca":"relogio masculino"},{"produto_uuid":"6336f4a4-78d4-4d57-bb2e-49c6e4fb4c90","nome":"Smartwatch Ultra U9 2026 Novo Inteligente watch 9 Ultra 2 Série 9 Bússola 2.2 Tela 49mm","preco_atual":36.8,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-m1zdd9g6ebbl6f","url_afiliado_temp":"https://s.shopee.com.br/9zuzJMnz5p","keyword_busca":"smartwatch"},{"produto_uuid":"5434819f-0b77-43b1-81aa-4c871576a92e","nome":"Smartwatch T800 T900 Ultra 3 Series 10 Ultra Calculadora Cardíaca Monitoramento Da Frequência Relógio Inteligente","preco_atual":36.8,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-lyxr0sjhlnkl63","url_afiliado_temp":"https://s.shopee.com.br/8pj1vDsQSi","keyword_busca":"smartwatch"},{"produto_uuid":"3620edae-b56c-4202-b491-3075744793f0","nome":"Câmera de Segurança HWN-AP03 Full HD Wifi Visão 360° e Noturna APP YOOSEE Original Envio Imediato","preco_atual":59.27,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rdxz-m14klfs4k6s17f","url_afiliado_temp":"https://s.shopee.com.br/4ftSxnPrvb","keyword_busca":"camera de seguranca"},{"produto_uuid":"189bd90a-09db-4020-89dc-e053279ab42c","nome":"Escova 5 em 1 Secador, Pente, Modelador, Aumenta volume Profissional 110V E 220V","preco_atual":55.99,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-825zn-mjou5wbw98n945","url_afiliado_temp":"https://s.shopee.com.br/4qCtA4pp2w","keyword_busca":"escova secador cabelo"},{"produto_uuid":"f20872c8-9114-4954-987b-da090fb1687f","nome":"Câmera de Segurança WiFi 360° Full HD 1080p com Áudio, Visão Noturna e Rastreamento Automático | Monitoramento celular","preco_atual":59,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-8262m-ml44tq1yqtxdd1","url_afiliado_temp":"https://s.shopee.com.br/4LGcZBR8bR","keyword_busca":"camera de seguranca"},{"produto_uuid":"de8ae8da-37a6-4b05-96b4-ab327c2d486c","nome":"Cadeira Gamer Ergonômica Profissional Reclinável com Apoio para Pés e Altura Ajustável para Escritório e Casa","preco_atual":409.99,"imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mlyv5klc23ur2d","url_afiliado_temp":"https://s.shopee.com.br/2BC7zAYxMr","keyword_busca":"cadeira gamer"},{"produto_uuid":"50a5ec0f-85c3-414b-8f7c-dcc35923f1aa","nome":"Cadeira Gamer Fox Racer Zerda com Apoio de Pés Azul W20","preco_atual":399.89,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rd4f-m7b6w0wisd7n74","url_afiliado_temp":"https://s.shopee.com.br/gNKCPefPg","keyword_busca":"cadeira gamer"},{"produto_uuid":"0bec9481-8148-43f3-b7be-eaa9de564757","nome":"Cadeira Gamer Fox Racer Vulpes Cinza WZ-318","preco_atual":389.37,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rd5w-m7b6vv6d62qg1d","url_afiliado_temp":"https://s.shopee.com.br/4LGcZ9QhyU","keyword_busca":"cadeira gamer"},{"produto_uuid":"7278a1ea-7e3f-4951-bf17-793902cfa766","nome":"Robô Aspirador Inteligente 3 em 1 – Silencioso, USB Recarregável, Amigo dos Pets","preco_atual":43.9,"imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-me9z7ce41g5c56","url_afiliado_temp":"https://s.shopee.com.br/50WJMPAAAy","keyword_busca":"aspirador robo"},{"produto_uuid":"509ec1f9-f215-4b08-8283-3e3de8fb3c80","nome":"Robô Aspirador Inteligente 3 em 1 p/ Casa com Pets 🐶🐱 – Varre, Aspira e Esteriliza com Luz UV ✨","preco_atual":46.88,"imagem_url":"https://cf.shopee.com.br/file/sg-11134201-825ax-mfydax9rq96xc5","url_afiliado_temp":"https://s.shopee.com.br/gNKCRQey2","keyword_busca":"aspirador robo"}]</script>
 <script>
-const PRODUTOS = [{"produto_uuid":"132b5cf9-e6a3-4fc3-bf35-bd3e94b68caa","nome":"Perfume Árabe Armaf Odyssey Mandarin Sky  Perfume Masculino Edp 100ml Original Importado","preco_atual":"159.00","imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mnzi7za0rlzc0d","url_afiliado_temp":"https://s.shopee.com.br/4AxCMsvx3T","keyword_busca":"perfume importado"},{"produto_uuid":"54f0dcf4-2690-44e2-adfa-4bd9fc99843c","nome":"Cadeira Gamer Reclinável Escritório Home Office Ergonômica Confortável Couro Sintético 120kg","preco_atual":"398.70","imagem_url":"https://cf.shopee.com.br/file/br-11134207-820m3-mo5q13uis5c171","url_afiliado_temp":"https://s.shopee.com.br/qgkOie24j","keyword_busca":"cadeira gamer"},{"produto_uuid":"c8f8c74e-fc4f-41de-9c09-6237f8a60a1d","nome":"Aspirador de Pó Robô WAP Robot W100 3 em 1 Antiqueda Bivolt 17W","preco_atual":"399.99","imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-mi3iwgro7wg2ad","url_afiliado_temp":"https://s.shopee.com.br/17dNeTkI1","keyword_busca":"aspirador robo"},{"produto_uuid":"bdf7dfd1-98e4-4056-a29a-4d011087d19e","nome":"Aspirador de Pó Robô 3 em 1 com MOP PAS23 Antiqueda - Philco","preco_atual":"445.90","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rep9-m8oxc86cbg6h06","url_afiliado_temp":"https://s.shopee.com.br/7VDeL00e6l","keyword_busca":"aspirador robo"},{"produto_uuid":"c0b02c4d-1a4d-4690-82fb-b1c226d9e263","nome":"Caixa De Som Bluetooth Portátil RGB Potente TWS USB Estéreo 30/50W Para Praia, Festa ou Viagem-Xtrad","preco_atual":"99.96","imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-lr7ob4xz5fd95d","url_afiliado_temp":"https://s.shopee.com.br/8fPbj7tRjI","keyword_busca":"caixa de som bluetooth"},{"produto_uuid":"6c9f2cd4-927e-4ad5-b82d-8bab7c4e17a9","nome":"Cadeira Gamer Ergonômica Reclinável Giratória Ajuste Altura Escritório DG-02 Apoio Pés","preco_atual":"449.95","imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-menebw4j3v9d71","url_afiliado_temp":"https://s.shopee.com.br/BR3bUgZQX","keyword_busca":"cadeira gamer"},{"produto_uuid":"e5397f8e-7573-4160-9e39-4db3bad684b0","nome":"GOKOCO Secador De Cabelo Com 5 Em 1 GD023 Escova Magnético Multifuncional De Alta Velocidade Com Alisar Enrolar Hot Air","preco_atual":"459.00","imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-ly4xw9u0pmnr61","url_afiliado_temp":"https://s.shopee.com.br/3LO5NJvX5X","keyword_busca":"escova secador cabelo"},{"produto_uuid":"3b35e63f-10a7-427d-8242-92ee091834b1","nome":"Kit 10 Potes Vidro 370ml Hermético Marmita Forno microondas Airfryer Manubelita","preco_atual":"87.97","imagem_url":"https://cf.shopee.com.br/file/br-11134207-81zuj-ml576pt4f9513a","url_afiliado_temp":"https://s.shopee.com.br/902S7kiM5J","keyword_busca":"air fryer"},{"produto_uuid":"e991c563-0d59-45ae-a722-1afe5013e7a3","nome":"Panela De Pressão Elétrica 6L Inox Preta Digital 110V ou 220V Oliver Home","preco_atual":"389.90","imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-mfbgj9fz2xac37","url_afiliado_temp":"https://s.shopee.com.br/2BC7zDgXnq","keyword_busca":"panela pressao eletrica"},{"produto_uuid":"92fa6fd6-582b-4442-a999-2c3040b2727b","nome":"Suporte Articula Para TVS E Monitor De 14 A 55 Polegadas, LED, PLASMA, LCD","preco_atual":"36.90","imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mm1aumto7pc359","url_afiliado_temp":"https://s.shopee.com.br/20shmtr066","keyword_busca":"monitor"},{"produto_uuid":"6ac0b38c-192d-4af5-bb3d-974136f27c76","nome":"JL PROTEC 4K 8MP Câmera de Segurança 2 Lentes Com Audio e Microfone Câmera 355 Graus Wifi","preco_atual":"176.99","imagem_url":"https://cf.shopee.com.br/file/br-11134201-81ztc-mj6htjflukg333","url_afiliado_temp":"https://s.shopee.com.br/7VDeL0F5As","keyword_busca":"camera de seguranca"},{"produto_uuid":"17244bd0-e409-4f8b-a895-a37535498618","nome":"Escova Secadora 110V Alisador Elétrica Quente Cabelo Com 3 Em1 Hair Styler","preco_atual":"37.99","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7ravk-ma1kw2axdoy9bb","url_afiliado_temp":"https://s.shopee.com.br/5VSZxInHgk","keyword_busca":"escova secador cabelo"},{"produto_uuid":"6758dce4-b971-4d49-adcc-2b17c22a4c39","nome":"Câmera De Rede Sem Fio À Prova Dágua 1080P Wi-Fi De Visão Noturna Infravermelha Amplamente Utilizada Para 360 Seguro ° ","preco_atual":"50.99","imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mi1duijnjapwd4","url_afiliado_temp":"https://s.shopee.com.br/7AanwOGLqi","keyword_busca":"camera de seguranca"},{"produto_uuid":"8c89c562-19ee-4b31-82c6-94310119bf98","nome":"RUI 360 Graus 1080P FHD Câmera WiFi CCTV De Segurança IP-IP66 À Prova Dágua IR Visão Noturna Flash Light","preco_atual":"58.99","imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mlvphyh4czr578","url_afiliado_temp":"https://s.shopee.com.br/6L1gwrJWXV","keyword_busca":"camera de seguranca"},{"produto_uuid":"824a9b17-7482-4e88-9a68-d615766d2ac4","nome":"Headset Fone Gamer Led RGB com microfone USB e P2 Para PC Computador Headphone Videogame","preco_atual":"49.95","imagem_url":"https://cf.shopee.com.br/file/br-11134207-820lx-mok07e710e1270","url_afiliado_temp":"https://s.shopee.com.br/30lEx9f0Co","keyword_busca":"headset gamer"},{"produto_uuid":"31a5388b-5a16-436e-821b-972cef5f3cc7","nome":"Smartwatch T800 Series 9 Ultra Calculadora Cardíaca Monitoramento Da Frequência Relógio Inteligente","preco_atual":"41.86","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rbna-lqr2pckaryk81a","url_afiliado_temp":"https://s.shopee.com.br/5fm09P4Tsp","keyword_busca":"smartwatch"},{"produto_uuid":"b5c93aa2-bd59-4e66-8f43-00e1bf57e814","nome":"PANO MOP COMPATIVEL XIAOMI ROBO ASPIRADOR  S40/S40C/H40 MICROFIBRA PREMIUM","preco_atual":"29.90","imagem_url":"https://cf.shopee.com.br/file/br-11134207-820lt-mlzk5i224cuc61","url_afiliado_temp":"https://s.shopee.com.br/7pqUjbzNQn","keyword_busca":"aspirador robo"},{"produto_uuid":"2e0253a5-9cd0-4263-baf6-9191e2bc61ae","nome":"10 Bandejas MDF 20x15x7 Te amo Casal Namorados Feminino Masculino Presente Chocolate Relogio Perfume","preco_atual":"39.90","imagem_url":"https://cf.shopee.com.br/file/br-11134207-81zun-mko3oxhbfnk386","url_afiliado_temp":"https://s.shopee.com.br/1gFrOIwssu","keyword_busca":"relogio masculino"},{"produto_uuid":"6336f4a4-78d4-4d57-bb2e-49c6e4fb4c90","nome":"Smartwatch Ultra U9 2026 Novo Inteligente watch 9 Ultra 2 Série 9 Bússola 2.2 Tela 49mm","preco_atual":"36.80","imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-m1zdd9g6ebbl6f","url_afiliado_temp":"https://s.shopee.com.br/9zuzJMnz5p","keyword_busca":"smartwatch"},{"produto_uuid":"5434819f-0b77-43b1-81aa-4c871576a92e","nome":"Smartwatch T800 T900 Ultra 3 Series 10 Ultra Calculadora Cardíaca Monitoramento Da Frequência Relógio Inteligente","preco_atual":"36.80","imagem_url":"https://cf.shopee.com.br/file/br-11134207-7r98o-lyxr0sjhlnkl63","url_afiliado_temp":"https://s.shopee.com.br/8pj1vDsQSi","keyword_busca":"smartwatch"},{"produto_uuid":"3620edae-b56c-4202-b491-3075744793f0","nome":"Câmera de Segurança HWN-AP03 Full HD Wifi Visão 360° e Noturna APP YOOSEE Original Envio Imediato","preco_atual":"59.27","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rdxz-m14klfs4k6s17f","url_afiliado_temp":"https://s.shopee.com.br/4ftSxnPrvb","keyword_busca":"camera de seguranca"},{"produto_uuid":"189bd90a-09db-4020-89dc-e053279ab42c","nome":"Escova 5 em 1 Secador, Pente, Modelador, Aumenta volume Profissional 110V E 220V","preco_atual":"55.99","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-825zn-mjou5wbw98n945","url_afiliado_temp":"https://s.shopee.com.br/4qCtA4pp2w","keyword_busca":"escova secador cabelo"},{"produto_uuid":"f20872c8-9114-4954-987b-da090fb1687f","nome":"Câmera de Segurança WiFi 360° Full HD 1080p com Áudio, Visão Noturna e Rastreamento Automático | Monitoramento celular","preco_atual":"59.00","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-8262m-ml44tq1yqtxdd1","url_afiliado_temp":"https://s.shopee.com.br/4LGcZBR8bR","keyword_busca":"camera de seguranca"},{"produto_uuid":"de8ae8da-37a6-4b05-96b4-ab327c2d486c","nome":"Cadeira Gamer Ergonômica Profissional Reclinável com Apoio para Pés e Altura Ajustável para Escritório e Casa","preco_atual":"409.99","imagem_url":"https://cf.shopee.com.br/file/cn-11134207-820l4-mlyv5klc23ur2d","url_afiliado_temp":"https://s.shopee.com.br/2BC7zAYxMr","keyword_busca":"cadeira gamer"},{"produto_uuid":"50a5ec0f-85c3-414b-8f7c-dcc35923f1aa","nome":"Cadeira Gamer Fox Racer Zerda com Apoio de Pés Azul W20","preco_atual":"399.89","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rd4f-m7b6w0wisd7n74","url_afiliado_temp":"https://s.shopee.com.br/gNKCPefPg","keyword_busca":"cadeira gamer"},{"produto_uuid":"0bec9481-8148-43f3-b7be-eaa9de564757","nome":"Cadeira Gamer Fox Racer Vulpes Cinza WZ-318","preco_atual":"389.37","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-7rd5w-m7b6vv6d62qg1d","url_afiliado_temp":"https://s.shopee.com.br/4LGcZ9QhyU","keyword_busca":"cadeira gamer"},{"produto_uuid":"7278a1ea-7e3f-4951-bf17-793902cfa766","nome":"Robô Aspirador Inteligente 3 em 1 – Silencioso, USB Recarregável, Amigo dos Pets","preco_atual":"43.90","imagem_url":"https://cf.shopee.com.br/file/br-11134207-81z1k-me9z7ce41g5c56","url_afiliado_temp":"https://s.shopee.com.br/50WJMPAAAy","keyword_busca":"aspirador robo"},{"produto_uuid":"509ec1f9-f215-4b08-8283-3e3de8fb3c80","nome":"Robô Aspirador Inteligente 3 em 1 p/ Casa com Pets 🐶🐱 – Varre, Aspira e Esteriliza com Luz UV ✨","preco_atual":"46.88","imagem_url":"https://cf.shopee.com.br/file/sg-11134201-825ax-mfydax9rq96xc5","url_afiliado_temp":"https://s.shopee.com.br/gNKCRQey2","keyword_busca":"aspirador robo"}];
-const ratings = ['4.5★','4.6★','4.7★','4.8★','4.9★','5.0★'];
-const reviews = ['1.2k','2.4k','856','3.1k','1.8k','4.2k','987','2.1k'];
+const PRODUTOS = JSON.parse(document.getElementById("dados").textContent);
+const ratings = ["4.5★","4.6★","4.7★","4.8★","4.9★","5.0★"];
+const reviews = ["1.2k","2.4k","856","3.1k","1.8k","4.2k","987","2.1k"];
 function rnd(arr){return arr[Math.floor(Math.random()*arr.length)];}
 function renderCards(filtro){
-  const grid=document.getElementById('grid');
-  const count=document.getElementById('grid-count');
-  const filtrados=filtro==='todos'?PRODUTOS:PRODUTOS.filter(p=>(p.keyword_busca||'').toLowerCase().replace(/ /g,'-')===filtro);
-  document.getElementById('count-produtos').textContent=PRODUTOS.length;
-  count.textContent=filtrados.length+' produto'+(filtrados.length!==1?'s':'');
+  const grid=document.getElementById("grid");
+  const count=document.getElementById("grid-count");
+  const filtrados=filtro==="todos"?PRODUTOS:PRODUTOS.filter(p=>(p.keyword_busca||"").toLowerCase().replace(/ /g,"-")===filtro);
+  document.getElementById("count-produtos").textContent=PRODUTOS.length;
+  count.textContent=filtrados.length+" produto"+(filtrados.length!==1?"s":"");
   grid.innerHTML=filtrados.map((p,i)=>{
-    const preco=Number(p.preco_atual).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-    const nome=(p.nome||'').substring(0,80);
-    const cat=(p.keyword_busca||'oferta');
-    const catSlug=cat.toLowerCase().replace(/ /g,'-');
-    const img=p.imagem_url||'https://via.placeholder.com/400x400/1E1E1E/888?text=Produto';
-    const link=p.url_afiliado_temp||'#';
-    return '<div class="card" style="animation-delay:'+(i%8*50)+'ms" data-cat="'+catSlug+'"><div class="card-img-wrap"><img src="'+img+'" alt="'+nome.replace(/"/g,'')+'" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/1E1E1E/555?text=Shopee'"><div class="card-tag">'+cat+'</div><div class="card-verified">✓</div></div><div class="card-body"><div class="card-stars"><span class="stars">'+rnd(ratings)+'</span><span class="stars-count">('+rnd(reviews)+' avaliações)</span></div><div class="card-nome">'+nome+'</div><div class="card-preco-wrap"><div class="card-preco">'+preco+'</div><div class="card-shopee-badge">🛒 Shopee</div></div><a href="'+link+'" class="btn-comprar" target="_blank" rel="noopener noreferrer">Ver oferta →</a></div></div>';
-  }).join('');
+    const preco=Number(p.preco_atual).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+    const nome=(p.nome||"").substring(0,80);
+    const cat=(p.keyword_busca||"oferta");
+    const catSlug=cat.toLowerCase().replace(/ /g,"-");
+    const img=p.imagem_url||"https://via.placeholder.com/400x400/1E1E1E/888?text=Produto";
+    const link=p.url_afiliado_temp||"#";
+    return "<div class=\"card\" style=\"animation-delay:"+(i%8*50)+"ms\" data-cat=\""+catSlug+"\"><div class=\"card-img-wrap\"><img src=\""+img+"\" alt=\""+nome.replace(/\"/g,"")+"\" loading=\"lazy\" onerror=\"this.src='https://via.placeholder.com/400x400/1E1E1E/555?text=Shopee'\"><div class=\"card-tag\">"+cat+"</div><div class=\"card-verified\">✓</div></div><div class=\"card-body\"><div class=\"card-stars\"><span class=\"stars\">"+rnd(ratings)+"</span><span class=\"stars-count\">("+rnd(reviews)+" avaliações)</span></div><div class=\"card-nome\">"+nome+"</div><div class=\"card-preco-wrap\"><div class=\"card-preco\">"+preco+"</div><div class=\"card-shopee-badge\">🛒 Shopee</div></div><a href=\""+link+"\" class=\"btn-comprar\" target=\"_blank\" rel=\"noopener noreferrer\">Ver oferta →</a></div></div>";
+  }).join("");
 }
 function filtrar(cat,btn){
-  document.querySelectorAll('.filtro').forEach(b=>b.classList.remove('ativo'));
-  if(btn)btn.classList.add('ativo');
+  document.querySelectorAll(".filtro").forEach(b=>b.classList.remove("ativo"));
+  if(btn)btn.classList.add("ativo");
   renderCards(cat);
 }
-renderCards('todos');
+renderCards("todos");
 </script>
 </body>
 </html>
